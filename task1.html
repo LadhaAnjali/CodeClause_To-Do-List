@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<hmtl>
+    <head>
+        <title>TO-DO LIST</title>
+        <style>
+            .completed{ text-decoration: line-through;
+            color:blue
+            }
+        </style>
+
+    </head>
+    <body> 
+        <h1><b><i>TO-DO LIST
+        </h1></b></i>
+        <ul id="task-list">
+            <li>buy milk</li>
+            <li>water plants</li>
+            <li>clean utensils</li>
+            <li>finish project</li>
+            <li>taking medicine</li>
+            <li> calling friend</li>
+            <li>birthday wish</li>
+            <li>drinking enough water</li>
+            <li>exercise daily</li>
+                </ul>
+        <script>
+            document.getElementById("task-list").addEventListener("click",function(event){
+                if(event.target.tagName == "LI")
+                {
+                    event.target.classList.toggle("completed");
+
+                }
+            });
+        </script>
+    </body>
+</hmtl>
